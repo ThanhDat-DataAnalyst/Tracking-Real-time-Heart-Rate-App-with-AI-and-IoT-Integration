@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Doctor.ChartActivity"
+    android:background="@drawable/background_gradient">
+
+
+    <ImageView
+        android:id="@+id/imgView_TopBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/bg_top"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ButtonBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/iconback"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgView_Profile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/img_profile"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="#92EAE0"
+            app:strokeWidth="2dp" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="386dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/inter_black"
+        android:text="Heart Beat Virsualization"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="83dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_TopBg"/>
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="617dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="yyyy/MM/dd"
+                android:textSize="15dp"></TextView>
+
+            <ImageView
+
+                android:id="@+id/dateicon"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/dateicon10"
+                />
+
+
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="332dp"
+            android:layout_height="544dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="153dp" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

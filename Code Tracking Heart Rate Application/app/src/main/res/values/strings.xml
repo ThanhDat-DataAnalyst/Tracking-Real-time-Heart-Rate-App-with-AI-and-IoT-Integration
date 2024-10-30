@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Cardio Guide</string>
+    <string name="login">Login</string>
+    <string name="ButtonLogin">Login</string>
+    <string name="TextChooseSignup">Don’t have an account?</string>
+    <string name="ButtonSignup">Signup</string>
+    <string name="TextLoginWith">Or login with</string>
+    <string name="ButtonGoogle" translatable="false">Login with Google</string>
+    <string name="loginland">Login</string>
+    <string name="texthaveaccount">Already have an account?</string>
+    <string name="textchooseland">Don’t have an account?</string>
+    <string name="btnsignland">Signup</string>
+    <string name="textloginwithland">Or login with</string>
+    <string name="loginwggland">Login with Google</string>
+    <string name="btnback">Back</string>
+    <string name="texttile">Login</string>
+    <string name="textlogindes">Please login to get your local AQI data.</string>
+    <string name="hintuser">Username</string>
+    <string name="password">Password</string>
+    <string name="rememberMeCheckbox">Remember me</string>
+    <string name="forgotpass">Forgot Password?</string>
+    <string name="btnbackland">Back</string>
+    <string name="orwith">Or with</string>
+    <string name="btnggland" translatable="false">Google</string>
+    <string name="forgotpassdialog">Forgot password</string>
+    <string name="forgotpassdesc">You will receive an email with a link to reset your password. Please check your inbox.</string>
+    <string name="resendmail">Resend email link</string>
+    <string name="changemail">Change email ID</string>
+    <string name="TextForgotPass">Forgot password</string>
+    <string name="TextFogotPassDesc">Provide your account\'s email  for which you want to reset your password.</string>
+    <string name="InputEmailAddress">Your email address</string>
+    <string name="ButtonSendRequest">Send request</string>
+    <string name="textintrologin">Your journey begins here - login to breathe in a tailored air quality experience.</string>
+    <string name="textchooseforgot">Have an account?</string>
+    <string name="textforgotpassland">Forgot password</string>
+    <string name="textupdate">Password updated!</string>
+    <string name="textupdatedesc">Your password has been updated!</string>
+    <string name="resetpass">Reset password</string>
+    <string name="InputPasswordReType">Re-type your password</string>
+    <string name="submit">Submit</string>
+    <string name="InputYourFullName">User Name</string>
+    <string name="hintyouremailaddress">Your email address</string>
+    <string name="TextTitleLogin">Hi, Welcome!</string>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Vietnamese</item>
+    </string-array>
+    <string name="TextLoginDesc">Explore real-time data on PM2.5, PM10, O3, NO2, CO, and more.</string>
+    <string name="TextSignupDesc">"Ready to elevate your air quality experience? Sign up now! "</string>
+    <string name="textresetdesc">- Must be at least 8 characters long.                            - Must contain at least one upper case.                            - Must contain at least one number or special character.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

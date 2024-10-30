@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:imeOptions="flagNoExtractUi"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusTopStart="9dp"
+        app:boxCornerRadiusTopEnd="9dp"
+        app:boxCornerRadiusBottomStart="9dp"
+        app:boxCornerRadiusBottomEnd="9dp"
+        android:hint="Your Age"
+        android:textColorHint="@color/textColorHint"
+        app:cursorColor="@color/colorSencondPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ageicon"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:textColor="#092C2C" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:imeOptions="flagNoExtractUi"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusTopStart="9dp"
+        app:boxCornerRadiusTopEnd="9dp"
+        app:boxCornerRadiusBottomStart="9dp"
+        app:boxCornerRadiusBottomEnd="9dp"
+        android:hint="Your Weight"
+        android:textColorHint="@color/textColorHint"
+        app:cursorColor="@color/colorSencondPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/weighticon"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:textColor="#092C2C" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:imeOptions="flagNoExtractUi"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxCornerRadiusTopStart="9dp"
+        app:boxCornerRadiusTopEnd="9dp"
+        app:boxCornerRadiusBottomStart="9dp"
+        app:boxCornerRadiusBottomEnd="9dp"
+        android:hint="Your Height"
+        android:textColorHint="@color/textColorHint"
+        app:cursorColor="@color/colorSencondPrimary"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/rulericon"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:textColor="#092C2C" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_update_information"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Update Information"
+        android:background="@drawable/btn_background_gradient"
+        app:backgroundTint="@null"/>
+
+
+</LinearLayout>

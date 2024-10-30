@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <!-- ImageVIew to display our Course Image -->
+        <ImageView
+            android:id="@+id/idIVCourseImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/apointment" />
+
+        <!-- Text View to display Course Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/Serive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourseImage"
+            android:text="Check heart service"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Text VIew to display Course Rating -->
+        <!-- Image used in present in drawable folder -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Serive"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/idIVCourseImage">
+        <TextView
+            android:id="@+id/dateservice"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dp"
+            android:text="12, March, 2024" />
+
+        <TextView
+            android:id="@+id/IDAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ID"
+            android:textSize="5dp"
+            android:textColor="#00000000" />
+
+    </LinearLayout>
+
+    </RelativeLayout>

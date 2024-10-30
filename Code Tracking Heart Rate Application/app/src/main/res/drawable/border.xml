@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#FFFFFF"/> <!-- Màu nền cho layout; sửa đổi nếu cần -->
+    <stroke android:width="2dp" android:color="#0C0A0A"/> <!-- Đường viền với độ rộng 2dp và màu đỏ -->
+    <corners android:radius="4dp"/> <!-- Góc tròn; bỏ qua nếu muốn đường viền vuông -->
+    <padding android:left="10dp" android:top="10dp"
+        android:right="10dp" android:bottom="10dp"/> <!-- Padding nếu cần -->
+</shape>

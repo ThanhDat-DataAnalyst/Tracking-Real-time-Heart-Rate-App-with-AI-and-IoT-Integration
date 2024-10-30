@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Doctor.PreCheckUpProcessActivity">
+
+    <ImageView
+        android:id="@+id/imgView_TopBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/bg_top"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ButtonBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/iconback"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgView_Profile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/img_profile"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:strokeColor="#92EAE0"
+            app:strokeWidth="2dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="386dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_black"
+        android:text="Pre-checkup Process"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="83dp"
+        android:paddingLeft="10dp"
+        android:textColor="#092C2C"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_TopBg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="617dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingLeft="50dp"
+                android:paddingTop="130dp"
+                android:paddingRight="0dp"
+                android:text="Patient's temperature:"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textColor="#092C2C"/>
+
+            <EditText
+                android:id="@+id/temperater"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#092C2C"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="°C"
+                android:textSize="18dp"
+                android:textColor="#092C2C"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="#092C2C"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:paddingRight="0dp"
+                android:text="Patient's blood pressure:"
+                android:textAlignment="center"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/bloodPressure"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mmHg"
+                android:textSize="18dp"
+                android:textColor="#092C2C"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Medical Examination"
+                android:textSize="18dp"
+                android:textColor="#092C2C"
+                android:fontFamily="@font/poppinsmedium"/>
+
+            <ImageView
+                android:id="@+id/MedicalExamination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/nexticon" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/bg_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/bg_bottom" />
+</androidx.constraintlayout.widget.ConstraintLayout>
